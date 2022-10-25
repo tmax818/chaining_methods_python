@@ -16,12 +16,14 @@ class User:
         print(self.age)
         print(self.is_rewards_member)
         print(self.gold_card_points)
+        return self
 
     def enroll(self):
         """Have this method change the user's member status to True and set their gold card points to 200."""
         self.is_rewards_member = True
         self.gold_card_points = 200
-
+        return self
     def spend_points(self, amount):
         """have this method decrease the user's points by the amount specified."""
         self.gold_card_points -= amount
+        return self
